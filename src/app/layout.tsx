@@ -1,15 +1,22 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import localFont from 'next/font/local'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import "@styles/normalize.scss";
+import "@styles/global.scss";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = localFont({
+  src: [
+    {
+      path: "./fonts/Inter_Medium.woff2",
+      weight: "500",
+      style: "normal"
+    },
+    {
+      path: "./fonts/Inter_Regular.woff2",
+      weight: "400",
+      style: "normal"
+    }
+  ]
+})
 
 export default function RootLayout({
   children,
@@ -18,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${inter.className}`}>
         {children}
       </body>
     </html>
