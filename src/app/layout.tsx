@@ -2,6 +2,8 @@ import localFont from 'next/font/local'
 
 import "@styles/normalize.scss";
 import "@styles/global.scss";
+import Header from '@/modules/Header/Header';
+import Wrapper from '@/ui/Wrapper/Wrapper';
 
 const inter = localFont({
   src: [
@@ -26,7 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        {children}
+        <Wrapper>
+          <Header />
+          {children}
+        </Wrapper>
       </body>
     </html>
   );
