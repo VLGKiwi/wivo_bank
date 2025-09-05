@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "classnames": "^2.5.1",
     "gsap": "^3.13.0",
     "next": "15.5.2",
     "react": "19.1.0",
@@ -15,6 +17,7 @@
     "sass": "^1.91.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

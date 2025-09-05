@@ -1,0 +1,40 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+
+.button {
+	color: $white;
+
+	@include link-m;
+}
+
+.primary,
+.secondary {
+	padding: 17px 28px;
+	border-radius: 80px;
+}
+
+.tertiary {
+	border-radius: 64px;
+	padding: 6px 14px;
+}
+
+.black {
+	background-color: $black;
+}
+
+.white {
+	background-color: $white;
+	color: $black;
+}
+
+.gray {
+	background-color: $gray;
+}
+
+.white20 {
+	background-color: $white-20;
+}
+
+.white10 {
+	background-color: $white-10;
+}

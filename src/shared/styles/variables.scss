@@ -1,0 +1,28 @@
+// breakpoints
+$desktop: 1440px;
+$tablet: 1024px;
+$tablet-small: 768px;
+$mobile-large: 480px;
+$mobile: 375px;
+
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// transitions
+$transition-duration: 0.3s;
+$transition-timing-function: ease;
+$transition: $transition-duration $transition-timing-function;
+
+// colors
+$black: #000;
+$light-black: #131314;
+$gray: #303236;
+$light-gray: #85888F;
+$white: #fff;
+$gradient: linear-gradient(#85888F 12%, #9DA3AB 100%);
+$black-30: rgba(0, 0, 0, 0.3);
+$white-60: rgba(237, 245, 255, 0.6);
+$white-30: rgba(237, 245, 255, 0.3);
+$white-20: rgba(237, 245, 255, 0.2);
+$white-10: rgba(237, 245, 255, 0.1);

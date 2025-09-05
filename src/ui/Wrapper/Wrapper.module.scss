@@ -1,0 +1,12 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 2.5rem;
+
+	@include mobile {
+		padding: 0 1.5rem;
+	}
+}
