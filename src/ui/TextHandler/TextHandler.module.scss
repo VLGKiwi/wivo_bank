@@ -1,0 +1,38 @@
+@import "@styles/mixins.scss";
+@import "@styles/variables.scss";
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+
+	&_description {
+		@include body-m;
+
+		color: $light-gray;
+	}
+
+	.heading-2 {
+		@include heading-2;
+	}
+
+	.heading-1 {
+		@include heading-1;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.mobCenter {
+		@include mobile {
+			text-align: center;
+		}
+	}
+
+	.mobLeft {
+		@include mobile {
+			text-align: left;
+		}
+	}
+}
