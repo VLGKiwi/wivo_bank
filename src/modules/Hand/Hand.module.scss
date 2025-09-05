@@ -1,0 +1,39 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+
+.container {
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+
+	overflow: hidden;
+
+	@include mobile {
+		flex-direction: column-reverse;
+		overflow: visible;
+	}
+
+	&_image {
+		position: relative;
+		left: -200px;
+
+		@include mobile {
+			left: -100px;
+		}
+	}
+
+	&_text {
+		max-width: 540px;
+		height: max-content;
+
+		display: flex;
+  	align-items: center;
+
+		margin: 240px 0;
+
+		@include mobile {
+			margin: 110px 0 0;
+		}
+	}
+}

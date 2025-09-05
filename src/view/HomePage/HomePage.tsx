@@ -1,4 +1,5 @@
 import Future from "@/modules/Future/Future";
+import Hand from "@/modules/Hand/Hand";
 import RunningLine from "@/modules/RunningLine/RunningLine";
 import Wrapper from "@/ui/Wrapper/Wrapper";
 
@@ -18,14 +19,18 @@ const runningLineData = {
 	content: "/images/running_line_img.png"
 };
 
-const HomePage = () => {
-	// Данные для компонента Future
+const handData = {
+	handSrc: "/images/hand-with-card.png",
+	handAlt: "Phone with WIVO app"
+};
 
+const HomePage = () => {
 	return (
 		<>
 			<Future {...futureData} />
 			<Wrapper>
 				<RunningLine {...runningLineData} />
+				<Hand {...handData} />
 			</Wrapper>
 		</>
 	)
