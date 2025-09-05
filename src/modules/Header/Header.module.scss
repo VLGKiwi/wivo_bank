@@ -4,6 +4,8 @@
 .container {
 	position: fixed;
 
+	z-index: 4;
+
 	width: 100%;
 
 	@include mobile {
@@ -25,10 +27,22 @@
 		// margin-bottom: -76px;
 
 		.container_logo {
+
+			width: 136px;
+			height: 22px;
+
 			@include mobile {
 				position: relative;
 				z-index: 5;
+
+				width: 80px;
 			}
+
+			svg {
+				width: 100%;
+				height: 100%;
+			}
+
 		}
 
 		.container_actions {

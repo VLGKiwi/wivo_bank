@@ -1,7 +1,5 @@
 'use client';
 
-import { useState } from "react";
-
 import Button from "@/ui/Button/Button";
 import { HeaderProps } from "./Header.types";
 import { Navigation } from "./Navigation/Navigation";
