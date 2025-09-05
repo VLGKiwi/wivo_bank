@@ -28,10 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <Wrapper>
-          <Header />
-          {children}
-        </Wrapper>
+        <Header />
+        {children}
       </body>
     </html>
   );

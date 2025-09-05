@@ -1,0 +1,84 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+
+.wrapper {
+	background: $gradient;
+
+	height: 800px;
+
+	@include mobile {
+		height: auto;
+	}
+
+	.container {
+		display: flex;
+
+		align-items: flex-end;
+
+		height: 100%;
+
+		max-width: 1440px;
+		margin: 0 auto;
+		padding: 124px 2.5rem 2.5rem;
+
+		overflow: hidden;
+
+		background: url("/images/glass-promo.png") no-repeat 120% center;
+
+		@include mobile {
+			flex-direction: column;
+			align-items: center;
+			gap: 2rem;
+			padding: 20px 1.5rem 0;
+			background: url("/images/glass-promo-mobile.png") no-repeat 60% -50%;
+
+			background-size: 1000px;
+		}
+
+		&_text {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			height: 100%;
+
+			@include mobile {
+				justify-content: flex-start;
+
+				gap: 32px;
+			}
+
+			&_title {
+				@include heading-1;
+
+				max-width: 560px;
+			}
+
+			&_content {
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+
+				max-width: 540px;
+
+				&_description {
+					@include paragraph;
+				}
+
+				&_buttons {
+					display: flex;
+					gap: 14px;
+				}
+			}
+		}
+
+		&_image {
+			position: relative;
+			bottom: -120px;
+
+			@include mobile {
+				bottom: 0;
+			}
+		}
+	}
+}
