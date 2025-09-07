@@ -1,3 +1,4 @@
+import Fingertips from "@/modules/Fingertips/Fingertips";
 import Future from "@/modules/Future/Future";
 import Hand from "@/modules/Hand/Hand";
 import RunningLine from "@/modules/RunningLine/RunningLine";
@@ -24,6 +25,11 @@ const handData = {
 	handAlt: "Phone with WIVO app"
 };
 
+const fingertipsData = {
+	image: "/images/fingertips_phone.png",
+	imgAlt: "iphone"
+};
+
 const HomePage = () => {
 	return (
 		<>
@@ -31,6 +37,7 @@ const HomePage = () => {
 			<Wrapper>
 				<RunningLine {...runningLineData} />
 				<Hand {...handData} />
+				<Fingertips {...fingertipsData} />
 			</Wrapper>
 		</>
 	)
