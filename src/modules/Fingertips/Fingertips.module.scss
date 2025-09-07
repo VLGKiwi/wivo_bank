@@ -1,0 +1,74 @@
+@import "@styles/variables.scss";
+@import "@styles/mixins.scss";
+
+.container {
+	display: flex;
+	justify-content: space-between;
+
+	background-color: $light-black;
+
+	border-radius: 24px;
+
+	padding: 64px 64px 228px;
+
+	position: relative;
+	overflow: hidden;
+
+	&_text {
+		max-width: 510px;
+	}
+
+	&_image {
+		display: flex;
+
+		position: absolute;
+		right: 185px;
+		bottom: -240px;
+
+		&_item {
+			display: flex;
+			flex-direction: column;
+			gap: 2px;
+
+			padding: 16px 20px;
+
+			background-color: $black-30;
+
+			backdrop-filter: blur(10px);
+
+			height: max-content;
+
+			position: absolute;
+
+			max-width: 183px;
+
+			border-radius: 20px;
+
+			&_left {
+				top: 20%;
+				left: -160px;
+
+				will-change: transform;
+			}
+
+			&_right {
+				top: 50%;
+  			right: -130px;
+
+				will-change: transform;
+			}
+
+
+			&_title {
+				@include body-m;
+			}
+
+			&_description {
+				@include caption;
+				line-height: 120%;
+
+				opacity: 0.6;
+			}
+		}
+	}
+}
