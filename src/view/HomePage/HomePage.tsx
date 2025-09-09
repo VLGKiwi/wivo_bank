@@ -1,3 +1,4 @@
+import CustomCards from "@/modules/CustomCards/CustomCards";
 import Fingertips from "@/modules/Fingertips/Fingertips";
 import Future from "@/modules/Future/Future";
 import Hand from "@/modules/Hand/Hand";
@@ -30,6 +31,11 @@ const fingertipsData = {
 	imgAlt: "iphone"
 };
 
+const customCardsData = {
+	image: "/images/cards.png",
+	imgAlt: "Custom cards"
+}
+
 const HomePage = () => {
 	return (
 		<>
@@ -38,6 +44,7 @@ const HomePage = () => {
 				<RunningLine {...runningLineData} />
 				<Hand {...handData} />
 				<Fingertips {...fingertipsData} />
+				<CustomCards {...customCardsData} />
 			</Wrapper>
 		</>
 	)
