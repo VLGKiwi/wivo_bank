@@ -1,0 +1,23 @@
+.container {
+	background: url("/images/bg-glass-cards.png") no-repeat bottom center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 100px;
+
+	padding-top: 240px;
+
+	&_text {
+		max-width: 710px;
+
+		div {
+			align-items: center;
+		}
+
+		p {
+			max-width: 610px;
+		}
+	}
+}

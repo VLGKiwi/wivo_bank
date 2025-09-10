@@ -18,6 +18,10 @@
 
 	.heading-1 {
 		@include heading-1;
+
+		@include mobile {
+			font-size: 48px;
+		}
 	}
 
 	.center {
