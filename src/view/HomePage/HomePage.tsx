@@ -1,4 +1,5 @@
 import CustomCards from "@/modules/CustomCards/CustomCards";
+import Faqs from "@/modules/Faqs/Faqs";
 import Fingertips from "@/modules/Fingertips/Fingertips";
 import Future from "@/modules/Future/Future";
 import Hand from "@/modules/Hand/Hand";
@@ -45,6 +46,7 @@ const HomePage = () => {
 				<Hand {...handData} />
 				<Fingertips {...fingertipsData} />
 				<CustomCards {...customCardsData} />
+				<Faqs />
 			</Wrapper>
 		</>
 	)
